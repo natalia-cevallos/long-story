@@ -66,7 +66,7 @@
 				<h2 class="form-titulo"> CREA UNA CUENTA </h2>
 				<div class="contenedor-inputs{{ $errors->has('name') ? ' has-error' : '' }}">
 					<div class="unInput">
-						<input type="text" name="name" placeholder="Nombre" class="input-48" value="{{ old('name') }}" required autofocus>
+						<input id="name" type="text" name="name" placeholder="Nombre" class="input-48" value="{{ old('name') }}" required autofocus>
             @if ($errors->has('name'))
               <span class="help-block">
                 <strong>{{ $errors->first('name') }}</strong>
@@ -75,7 +75,7 @@
 					</div>
 
 					<div class="unInput{{ $errors->has('apellido') ? ' has-error' : '' }}">
-						<input type="text" name="apellido" placeholder="Apellido" class="input-48" value="{{ old('apellido') }}" required autofocus>
+						<input id="apellido" type="text" name="apellido" placeholder="Apellido" class="input-48" value="{{ old('apellido') }}" required autofocus>
             @if ($errors->has('apellido'))
               <span class="help-block">
                 <strong>{{ $errors->first('apellido') }}</strong>
@@ -84,7 +84,7 @@
 					</div>
 
 					<div class="unInput lg{{ $errors->has('email') ? ' has-error' : '' }}">
-						<input type="text" name="email" value="" placeholder="Correo Electronico" >
+						<input id="email" type="text" name="email" placeholder="Correo Electronico" value="{{ old('email') }}">
             @if ($errors->has('email'))
               <span class="help-block">
                 <strong>{{ $errors->first('email') }}</strong>
@@ -94,13 +94,15 @@
 
 					<div class="unInput lg{{ $errors->has('username') ? ' has-error' : '' }}">
 						<input type="text" name="username" placeholder="Usuario" value="{{ old('username') }}">
-						<?php if (isset($erroresFinales['username'])): ?>
-							<span class="error"><?=$erroresFinales['username'];?></span>
-						<?php endif; ?>
+            @if ($errors->has('username'))
+              <span class="help-block">
+                <strong>{{ $errors->first('username') }}</strong>
+              </span>
+            @endif
 					</div>
 
 					<div class="unInput lg">
-						<input type="password" name="pass" placeholder="Contraseña" required>
+						<input id="password" type="password" name="pass" placeholder="Contraseña" required>
             @if ($errors->has('password'))
               <span class="help-block">
                 <strong>{{ $errors->first('password') }}</strong>
@@ -109,10 +111,7 @@
 					</div>
 
 					<div class="unInput lg">
-						<input type="password" name="repass" placeholder="Repetir Contraseña" required>
-						<?php if (isset($erroresFinales['repass'])): ?>
-							<span class="error"><?=$erroresFinales['repass'];?></span>
-						<?php endif; ?>
+						<input id="password-confirm" type="password" placeholder="Repetir Contraseña" name="password_confirmation" required>
 					</div>
 
           <div class="unInput">

@@ -68,16 +68,23 @@
 		<form method="post" class="form-register" action="{{ route('login') }}">
       {{ csrf_field() }}
 				<h2 class="form-titulo"> INGRESA </h2>
-				<div class="contenedor-inputs">
+				<div class="contenedor-inputs{{ $errors->has('email') ? ' has-error' : '' }}">
 					<div class="unInput lg">
-							<input type="email" name="email" placeholder="Correo">
-							<?php if (isset($erroresFinales['email'])): ?>
-								<span class="error"><?=$erroresFinales['email'];?></span>
-							<?php endif; ?>
+							<input id="email" type="email" name="email" placeholder="Correo">
+              @if ($errors->has('email'))
+                  <span class="error">
+                      <strong>{{ $errors->first('email') }}</strong>
+                  </span>
+              @endif
 					</div>
 
-					<div class="unInput lg">
-						<input type="password" name="pass" placeholder="Contraseña">
+					<div class="unInput lg{{ $errors->has('password') ? ' has-error' : '' }}">
+						<input id="password" type="password" name="pass" placeholder="Contraseña">
+            @if ($errors->has('password'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
+            @endif
 					</div>
 
 
