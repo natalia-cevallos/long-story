@@ -1,4 +1,4 @@
-@extends('inicio')
+@extends('navbar')
 @section('title') <title>Registro</title>
 @section('content')
 <div class="container">

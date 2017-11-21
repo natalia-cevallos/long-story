@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +16,7 @@
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>
           <nav class="menu">
-            <a href="index.php"> Inicio </a>
+            <a href="{{ route('index') }}"> Inicio </a>
             <a href="{{ route('preguntas') }}"> Preguntas</a>
 		<?php if (isset($usuario)): ?>
 			<a class="button" href="perfil-usuario.php">Mi Perfil</a>

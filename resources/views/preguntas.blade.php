@@ -1,4 +1,4 @@
-@extends('inicio')
+@extends('navbar')
 
 @section('content')
   <div class="acordeon">
