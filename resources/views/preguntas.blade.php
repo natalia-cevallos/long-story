@@ -1,5 +1,5 @@
 @extends('navbar')
-
+@section('title') <title>Preguntas</title>
 @section('content')
   <div class="acordeon">
 
