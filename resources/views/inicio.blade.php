@@ -16,15 +16,15 @@
           <label class="icon-menu" for="menu-bar"></label>
           <nav class="menu">
             <a href="index.php"> Inicio </a>
-            <a href="preguntas.php"> Preguntas</a>
+            <a href="{{ route('preguntas') }}"> Preguntas</a>
 		<?php if (isset($usuario)): ?>
 			<a class="button" href="perfil-usuario.php">Mi Perfil</a>
 			<a class="button" href="logout.php">Salir</a>
 			<a class="button">Hola <?=$usuario["name"];?></a>
       <img src="<?=$laImagen[0];?>" alt="avatar" width="50" height="50" style="border-radius: 50%;">
 		<?php else: ?>
-            <a href="registro.php"> Registro </a>
-            <a href="login.php"> Login </a>
+            <a href="{{ route('register') }}"> Registro </a>
+            <a href="{{ route('login') }}"> Login </a>
 		<?php endif; ?>
           </nav>
         </div>
