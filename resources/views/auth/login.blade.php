@@ -63,4 +63,38 @@
         </div>
     </div>
 </div>
+
+<br><br><br>
+		<form method="post" class="form-register" action="{{ route('login') }}">
+      {{ csrf_field() }}
+				<h2 class="form-titulo"> INGRESA </h2>
+				<div class="contenedor-inputs">
+					<div class="unInput lg">
+							<input type="email" name="email" placeholder="Correo">
+							<?php if (isset($erroresFinales['email'])): ?>
+								<span class="error"><?=$erroresFinales['email'];?></span>
+							<?php endif; ?>
+					</div>
+
+					<div class="unInput lg">
+						<input type="password" name="pass" placeholder="Contraseña">
+					</div>
+
+
+					<div class="unInput lg">
+						<input type="submit" value="Entrar" class="btn-enviar">
+					</div>
+
+					<div class="container-recordarme">
+						<input type="checkbox" name="recordar" value="recordar" ><span> Recordarme </span>
+					</div>
+
+
+
+
+
+					<br><br>
+
+				</div>
+				</form>
 @endsection
