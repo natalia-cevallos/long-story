@@ -1,5 +1,5 @@
 @extends('navbar')
-
+@section('title') <title>Login</title>
 @section('content')
 <div class="container">
     <div class="row">

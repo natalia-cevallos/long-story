@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="images/libro-icono-MRK-2.ico">
     <title>@yield('title')</title>
   </head>
   <body>

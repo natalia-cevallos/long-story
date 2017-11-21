@@ -1,5 +1,5 @@
 @extends('navbar')
-
+@section('title') <title>Inicio</title>
 @section('content')
   <main>
        <section id="quienessomos">
