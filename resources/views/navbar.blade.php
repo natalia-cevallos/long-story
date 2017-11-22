@@ -17,17 +17,23 @@
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>
           <nav class="menu">
-            <a href="{{ route('index') }}"> Inicio </a>
+            <a href="{{ route('home') }}"> Inicio </a>
             <a href="{{ route('preguntas') }}"> Preguntas</a>
-		<?php if (isset($usuario)): ?>
-			<a class="button" href="perfil-usuario.php">Mi Perfil</a>
-			<a class="button" href="logout.php">Salir</a>
-			<a class="button">Hola <?=$usuario["name"];?></a>
-      <img src="<?=$laImagen[0];?>" alt="avatar" width="50" height="50" style="border-radius: 50%;">
-		<?php else: ?>
-            <a href="{{ route('register') }}"> Registro </a>
-            <a href="{{ route('login') }}"> Login </a>
-		<?php endif; ?>
+            @guest
+            <a href="{{ route('register') }}">Registro</a>
+            <a href="{{ route('login') }}">Login</a>
+          @else
+            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                {{ Auth::user()->name }} <span class="caret"></span>
+            </a>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+            Logout
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+          </form>
+          @endguest
           </nav>
         </div>
       </header>
