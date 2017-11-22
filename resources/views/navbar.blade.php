@@ -17,11 +17,11 @@
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>
           <nav class="menu">
-            <a href="{{ route('index') }}"> Inicio </a>
+            <a href="{{ route('home') }}"> Inicio </a>
             <a href="{{ route('preguntas') }}"> Preguntas</a>
             @guest
+            <a href="{{ route('register') }}">Registro</a>
             <a href="{{ route('login') }}">Login</a>
-            <a href="{{ route('register') }}">Register</a>
           @else
             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                 {{ Auth::user()->name }} <span class="caret"></span>
