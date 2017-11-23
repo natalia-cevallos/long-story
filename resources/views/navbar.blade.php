@@ -17,7 +17,7 @@
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>
           <nav class="menu">
-            <a href="{{ route('home') }}"> Inicio </a>
+            <a href="{{ route('index') }}"> Inicio </a>
             <a href="{{ route('preguntas') }}"> Preguntas</a>
             @guest
             <a href="{{ route('register') }}">Registro</a>

@@ -2,7 +2,6 @@
 @section('title') <title>Login</title>
 @section('content')
 <br><br><br>
-
 		<form method="post" class="form-register" action="{{ route('login') }}">
       {{ csrf_field() }}
 				<h2 class="form-titulo"> INGRESA </h2>

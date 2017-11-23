@@ -10,4 +10,8 @@ class PreguntasController extends Controller
   {
     return view('preguntas');
   }
+  public function mandaraInicio()
+  {
+    return view("index");
+  }
 }
