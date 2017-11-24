@@ -23,7 +23,7 @@
             <a href="{{ route('register') }}">Registro</a>
             <a href="{{ route('login') }}">Login</a>
           @else
-            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+            <a href="{{ route('home') }}" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                 {{ Auth::user()->name }} <span class="caret"></span>
             </a>
             <a href="{{ route('logout') }}" onclick="event.preventDefault();
