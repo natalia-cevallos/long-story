@@ -18,9 +18,12 @@ class CreateUsersTable extends Migration
            $table->string('name');
            $table->string('apellido');
            $table->string("username");
-           $table->string('email')->unique();;
+           $table->string('email')->unique();
+           $table->boolean('visible')->default(1);
+           $table->boolean('admin')->default(0);
+           $table->string('avatar')->default('img/default-profile.jpg');
            $table->string('password');
-           $table->string('country');
+           //$table->string('country');
            $table->rememberToken();
            $table->timestamps();
         });

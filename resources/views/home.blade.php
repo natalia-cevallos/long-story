@@ -16,5 +16,8 @@
     <br>
     {{ Auth::user()->email }}
   </div>
+    <br><br>
+    <a href="{{ url('/profile') }}" class="form-titulo">Editar Usuario</a>
 </div>
+<br><br>
 @endsection

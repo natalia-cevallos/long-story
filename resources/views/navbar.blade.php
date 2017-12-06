@@ -26,6 +26,7 @@
             <a href="{{ route('home') }}" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                 {{ Auth::user()->name }} <span class="caret"></span>
             </a>
+            <img src="{{ Auth::user()->avatar }}" alt="avatar" width="50" height="50" style="border-radius: 50%;">
             <a href="{{ route('logout') }}" onclick="event.preventDefault();
             document.getElementById('logout-form').submit();">
             Logout
