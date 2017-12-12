@@ -12,6 +12,14 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.BgClass1 {
+    background-image: url('http://2.bp.blogspot.com/-2ou0E9UeLU0/VT-I4yhxLcI/AAAAAAAAZo4/i5WW5PsvG18/s1600/biblioteca_libros_prohibidos.jpg');
+}
+
+.BgClass2 {
+    background-image: url('http://chacoadentro.com/wp-content/uploads/2017/09/libros.jpg');
+}
+
 section {
   width: 100%;
   margin-bottom: 25px;
@@ -458,7 +466,7 @@ footer contenedor {
 /*CARROUSEL*/
 .wrapper{
   width: 1270px;
-  margin: 50px;
+  margin: 50px auto;
 }
 
 .rslides {

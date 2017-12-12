@@ -56,5 +56,8 @@
 
   </div>
 
+  <button class="btn-enviar" type="button" id="boton1"> Tema 1 </button>
+  <button class="btn-enviar" type="button" id="boton2"> Tema 2 </button>
+
   <br><br><br><br><br><br><br>
 @endsection
