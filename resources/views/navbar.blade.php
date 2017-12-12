@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsiveslides.css">
     <link rel="icon" href="images/libro-icono-MRK-2.ico">
     <title>@yield('title')</title>
   </head>
@@ -39,15 +40,42 @@
         </div>
       </header>
 
-         <section id="banner">
+         <!-- <section id="banner">
         <img src="images/banner2.jpg" >
           <div class="contenedor">
             <h2> Long story | Tu librería online</h2>
             <p> ¿Cuál es tu libro favorito?</p>
             <a href="#"> Leer más </a>
           </div>
-        </section>
+        </section> -->
+
+        <div class="wrapper">
+          <div class="slider-area">
+            <ul class="rslides">
+              <li> <img src="{{url('/images/banner1.jpg')}}" alt=""> <p class="caption">ASBCBDBDBD</p> </li>
+              <li> <img src="{{url('/images/banner2.jpg')}}" alt=""> <p class="caption">JKLLLKJJBN</p></li>
+              <li> <img src="{{url('/images/banner3.jpg')}}" alt=""> <p class="caption">OIEOJEFJEH</p> </li>
+            </ul>
+          </div>
+        </div>
+
+
         @yield('content')
+
+        <script type="text/javascript" src="{{ URL::asset('js/jquery-3.2.1.min.js') }}"></script>
+        <script src="{{URL::asset('js/responsiveslides.js') }}"></script>
+        <script>
+            $(function() {
+              $(".rslides").responsiveSlides({
+                  auto: true,
+                  pause: true,
+                  nav: true,
+                  pager: false,
+                  speed: 1000,
+                  namespace: "rslides",
+                });
+            });
+        </script>
 
         <footer>
           <div class="contenedor">
