@@ -465,11 +465,11 @@ footer contenedor {
 
 /*CARROUSEL*/
 .wrapper{
-  width: 1270px;
+  width: 100%;
   margin: 50px auto;
 }
 
-.rslides {
+/*.rslides {
   position: relative;
   list-style: none;
   overflow: hidden;
@@ -499,7 +499,7 @@ footer contenedor {
   float: left;
   width: 100%;
   border: 0;
-  }
+  }*/
 
 .caption{
   display: block;
