@@ -69,9 +69,9 @@
             $(function() {
               $(".rslides").responsiveSlides({
                   auto: true,
-                  pause: true,
-                  nav: true,
-                  pager: false,
+                  pause: false,
+                  nav: false,
+                  pager: true,
                   speed: 1000,
                   namespace: "rslides",
                 });
