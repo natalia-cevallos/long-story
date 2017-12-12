@@ -61,8 +61,18 @@
 						<input id="password-confirm" type="password" placeholder="Repetir Contraseña" name="password_confirmation" required>
 					</div>
 
+      <div class="unInput lg">
+        <select id="paises">
+
+        </select>
+			</div>
+
 					<input type="submit" value="Registrar" class="btn-enviar">
 					<p class="form-link"> ¿Ya tienes una cuenta? <a href="login.php"> Ingresa aquí </a></p>
 				</div>
 		</form>
+
+  <script src="{{URL::asset('js/register.js') }}">
+
+  </script>
 @endsection
