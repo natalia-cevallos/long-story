@@ -62,10 +62,18 @@
 					</div>
 
       <div class="unInput lg">
-        <select id="paises">
+        <select id="country">
 
         </select>
 			</div>
+
+      <div class="unInput lg">
+        <select id="provincias">
+
+        </select>
+      </div>
+
+
 
 					<input type="submit" value="Registrar" class="btn-enviar">
 					<p class="form-link"> ¿Ya tienes una cuenta? <a href="login.php"> Ingresa aquí </a></p>
