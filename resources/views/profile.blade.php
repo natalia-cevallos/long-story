@@ -12,6 +12,10 @@
                 <br><br>
                 <input type="submit" class="btn-enviar">
             </form>
+
+            <button class="btn-enviar" type="button" id="boton1"> Tema 1 </button>
+            <button class="btn-enviar" type="button" id="boton2"> Tema 2 </button>
+                <script src="{{URL::asset('js/themes.js') }}"></script>
     </div>
 </div>
 <br><br>
