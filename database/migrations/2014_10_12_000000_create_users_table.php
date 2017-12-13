@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
            $table->boolean('admin')->default(0);
            $table->string('avatar')->default('img/default-profile.jpg');
            $table->string('password');
-           //$table->string('country');
+           $table->string('country');
            $table->rememberToken();
            $table->timestamps();
         });
