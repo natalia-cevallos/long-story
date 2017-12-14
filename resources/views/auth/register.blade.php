@@ -8,7 +8,7 @@
 'O'=>'Otro'
 ];
   @endphp
-    <form method="post" class="form-register" action="{{ route('register') }}">
+    <form method="post" name="registro" class="form-register" action="{{ route('register') }}">
       {{ csrf_field() }}
 				<h2 class="form-titulo"> CREA UNA CUENTA </h2>
 				<div class="contenedor-inputs{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -62,7 +62,7 @@
 					</div>
 
       <div class="unInput lg">
-        <select id="country">
+        <select name="pais" id="country">
 
         </select>
 			</div>
