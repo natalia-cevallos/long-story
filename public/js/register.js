@@ -1,4 +1,4 @@
-function ajaxCall(method, url, callbackFunction){
+  function ajaxCall(method, url, callbackFunction){
   var myAjax = new XMLHttpRequest();
 
   myAjax.onreadystatechange = function() {
@@ -53,8 +53,9 @@ function getPaises (resultado){
   }
 }
 
-// function ocultar(){
-//   if (document.getElementById('paises').getAttribute("option").getAttribute("value").checked){
-//     document.getElementById('provincias').style.display = none;
-//   }
-// }
+	// var  pais = document.registro.pais[document.registro.pais.selectedIndex].value)
+  // function ocultarprov(){
+  //   if (pais !=1){
+  //     document.getElementById('provincias').style.display = none;
+  //   }
+  // }

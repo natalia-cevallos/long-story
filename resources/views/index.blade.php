@@ -11,43 +11,7 @@
              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
          </section>
 
-         <section id="productos">
-           <h3> Lo último de nuestros productos </h3>
-           <div class="contenedor">
-             <article >
-               <img src="images/producto1.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-             <article >
-               <img src="images/producto2.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-             <article >
-               <img src="images/producto3.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-             <article >
-               <img src="images/producto4.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-             <article >
-               <img src="images/producto5.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-             <article >
-               <img src="images/producto6.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-             <article >
-               <img src="images/producto7.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-             <article >
-               <img src="images/producto8.jpg" class="producto2">
-               <h4> Escoge tu preferido </h4>
-             </article>
-           </div>
-         </section>
+         
 
          <section id= "info">
            <h3> Algunos autores reconocidos en Latinoamérica </h3>

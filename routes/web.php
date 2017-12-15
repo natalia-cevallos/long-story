@@ -14,4 +14,7 @@ Route::get("index", "PreguntasController@mandaraInicio")->name("index");
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
 
+Route::resource('libros','BooksController');
+Route::resource('categorias','CategoriesController');
+
 Route::auth();
