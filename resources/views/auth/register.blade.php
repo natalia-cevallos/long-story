@@ -1,13 +1,7 @@
 @extends('navbar')
 @section('title') <title>Registro</title>
 @section('content')
-  @php
-  $sexos = [
-'F' => 'Femenino',
-'M' => 'Masculino',
-'O'=>'Otro'
-];
-  @endphp
+<br><br><br>
     <form method="post" name="registro" class="form-register" action="{{ route('register') }}">
       {{ csrf_field() }}
 				<h2 class="form-titulo"> CREA UNA CUENTA </h2>
@@ -62,13 +56,12 @@
 					</div>
 
       <div class="unInput lg">
-        <select name="pais" id="country">
-
+        <select id="country" name="country">
         </select>
 			</div>
 
       <div class="unInput lg">
-        <select id="provincias">
+        <select id="provincias" name="provincias">
 
         </select>
       </div>
