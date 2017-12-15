@@ -14,4 +14,8 @@ class PreguntasController extends Controller
   {
     return view("index");
   }
+  public function mandaraMenu()
+  {
+    return view("menu");
+  }
 }

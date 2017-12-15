@@ -20,6 +20,7 @@
           <label class="icon-menu" for="menu-bar"></label>
           <nav class="menu">
             <a href="{{ route('index') }}"> Inicio </a>
+            <a href="{{ route('menu') }}"> Libros </a>
             <a href="{{ route('preguntas') }}"> Preguntas</a>
             @guest
             <a href="{{ route('register') }}">Registro</a>
@@ -40,7 +41,7 @@
           </nav>
         </div>
       </header>
-      
+
 
          <!-- <section id="banner">
 
