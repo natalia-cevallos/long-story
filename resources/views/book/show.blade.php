@@ -15,16 +15,14 @@
       </div>
     </div>
 
-
     <div class="w3-container">
       <h2>Libro: {{ $libro->name }}</h2>
       <p>descripcion corta: {{ $libro->description }}</p>
-      <img src="/images/{{ $libro->image->src }}" >
+      <img src="/images/{{ $libro->image->src }}" alt="producto">
       <ul>
     		<li>Rating: {{ $libro->name }}</li>
     		<li>Premios: {{ $libro->description }}</li>
     		<li>Precio $: {{ $libro->price }}</li>
-    		{{-- <li>Fecha de lanzamiento: {{ date('Y-m-d', strtotime($libro->release_date)) }}</li> --}}
     		<li>Categoria: {{ $libro->category->name }}</li>
     		<li>
     			Actores:
@@ -42,6 +40,7 @@
     	<a href="{{ route('libros.index') }}" class="button">volver al listado</a>
     </div>
     </div>
+
     <script>
     function w3_open() {
         document.getElementById("mySidebar").style.display = "block";
@@ -50,4 +49,5 @@
         document.getElementById("mySidebar").style.display = "none";
     }
     </script>
+
 @endsection

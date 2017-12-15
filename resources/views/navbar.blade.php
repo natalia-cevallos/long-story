@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="{{ asset('css/w3.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
     <link rel="stylesheet" href="css/responsiveslides.css">
     <link rel="icon" href="images/libro-icono-MRK-2.ico">
     <title>@yield('title')</title>
@@ -41,23 +42,9 @@
       </header>
 
          <!-- <section id="banner">
-        <img src="images/banner2.jpg" >
-          <div class="contenedor">
-            <h2> Long story | Tu librería online</h2>
-            <p> ¿Cuál es tu libro favorito?</p>
-            <a href="#"> Leer más </a>
-          </div>
+
         </section> -->
 
-        <div class="wrapper">
-          <div class="slider-area">
-            <ul class="rslides">
-              <li> <img src="{{url('/images/banner1.jpg')}}" alt=""> <p class="caption">Más historias que contar</p> </li>
-              <li> <img src="{{url('/images/banner2.jpg')}}" alt=""> <p class="caption">Los mejores libros del mundo</p></li>
-              <li> <img src="{{url('/images/banner3.jpg')}}" alt=""> <p class="caption">No te podes perder las últimas novedades</p> </li>
-            </ul>
-          </div>
-        </div>
 
 
         @yield('content')
