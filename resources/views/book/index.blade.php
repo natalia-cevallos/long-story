@@ -22,8 +22,8 @@
   <table class="w3-table-all">
     <thead>
       <tr class="w3-light-grey">
-        <th>Titulo</th>
-        <th>Descripcion</th>
+        <th>Título</th>
+        <th>Descripción</th>
         <th>Precio</th>
         <th colspan="3">&nbsp;</th>
       </tr>
